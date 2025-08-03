@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
+      // Function to add a new task
+    function addTask() {
+        const taskText = taskInput.value.trim();
+
+        if (taskText !== "") {
+
     // Load tasks from Local Storage on page load
     function loadTasks() {
         const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
