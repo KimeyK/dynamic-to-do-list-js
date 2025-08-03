@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
       // Function to add a new task
     function addTask() {
         const taskText = taskInput.value.trim();
+        
+        const listItem = document.createElement('li');
+        listItem.textContent = taskText;
 
         if (taskText !== "") {
 
