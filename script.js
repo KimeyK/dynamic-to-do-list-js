@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function addTask() {
         const taskText = taskInput.value.trim();
         
-        const listItem = document.createElement('li');
-        listItem.textContent = taskText;
-
         if (taskText !== "") {
 
     // Load tasks from Local Storage on page load
